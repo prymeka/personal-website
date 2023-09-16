@@ -1,2 +1,4 @@
-# personal-website
-Personal portfolio website.
+# Personal Website
+
+Personal portfolio website made with HUGO.
+
