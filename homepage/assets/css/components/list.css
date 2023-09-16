@@ -1,0 +1,16 @@
+#projects {
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  padding: 3rem 2rem;
+}
+
+#projects h1 {
+  text-align: center;
+}
+
+#projects h1,
+#all-cats {
+  margin: 0.7em;
+}
+

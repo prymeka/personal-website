@@ -1,0 +1,7 @@
+<ul id="all-cats" class="is-flex-center-row is-flex-wrap">
+{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+  {{ with $.Site.GetPage (printf "/categories/%s" $name) }}
+    <li class="category-item"><a href="{{ .Permalink }}">{{ $name | humanize | title }}</a></li>
+  {{ end }}
+{{ end }}
+</ul>

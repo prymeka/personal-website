@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head" . }}
+  <body class="is-flex-centre-column">
+    <main class="is-flex-centre-column">
+      {{ block "content" . }}{{ end }}
+    </main>
+    {{ partial "footer" . }}
+	</body>
+</html>

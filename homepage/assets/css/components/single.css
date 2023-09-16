@@ -1,0 +1,78 @@
+/* Project */
+
+.article {
+  width: 100%;
+  padding: 3em 2em;
+}
+
+.article-header {
+  max-width: 1000px;
+}
+
+.article-header * {
+  margin-block: 0.7rem;
+}
+
+.article-title {
+  font-size: 3rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.article-date {
+  font-size: 0.8rem;
+  color: var(--color-secondary-transparent);
+  font-family: sans-serif;
+}
+
+.article-header img {
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 500px;
+}
+
+.article-content {
+  line-height: 1.7;
+  font-size: 1.2rem;
+  max-width: 50ch;
+  margin: 1.7em;
+}
+
+.article-content p {
+  margin: 1em;
+}
+
+.article-content p a {
+  color: var(--color-tertiary);
+}
+
+.article-footer p {
+  margin-top: 2em;
+  font-weight: bold;
+}
+
+.article-footer hr {
+  width: 100%;
+}
+
+/* Meta */
+
+.meta-article section ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meta-article section ul li * {
+  flex: 1;
+  margin: 0.7em;
+  text-align: center;
+}
+
+.meta-article section ul li img,
+.meta-article .article-content p img {
+  max-width: 50px;
+  max-height: 50px;
+}
+

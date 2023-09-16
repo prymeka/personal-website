@@ -1,0 +1,9 @@
+<footer class="is-flex-center-row">
+  <a href="{{ "." | absURL }}">Home</a>
+  <span>|</span>
+  <a href="{{ "./projects/" | absURL }}">Projects</a>
+  {{ range where .Site.RegularPages "Section" "meta" }}
+    <span>|</span>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{ end }}
+</footer>

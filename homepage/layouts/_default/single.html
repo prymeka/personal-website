@@ -1,0 +1,25 @@
+{{ define "content" }}
+<a href="/" class="back-home">&#8920;</a>
+<article class="article is-flex-center-column">
+  <section class="article-header is-flex-center-column">
+    <h1 class="article-title">{{ .Title | title }}</h1>
+    <ul class="article-cats">
+    {{ range $i, $c := .Params.categories }}
+      <li class="category-item"><a href='{{ "/categories/" | relLangURL }}{{ $c | urlize }}'>{{ $c | title }} </a></li>
+    {{ end }}
+    </ul>
+    <p class="article-date">{{ .Params.date.Format "02 Jan 2006" }}</p>
+    {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+    <img src="{{ $featured_image }}" alt="Featured Image for {{ .Title }}" title="{{ .Title }}">
+  </section>
+  <section class="article-content">
+    {{ .Content }}
+  </section>
+  <section class="article-footer is-flex-center-column">
+    <hr>
+    <p>All Categories:</p>
+    {{ partial "all-cats" . }}
+    <hr>
+  </section>
+</article>
+{{ end }}

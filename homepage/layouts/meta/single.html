@@ -1,0 +1,11 @@
+{{ define "content" }}
+<a href="/" class="back-home">&#8920;</a>
+<article class="article meta-article is-flex-center-column"> 
+  <section class="article-header">
+    <h1 class="article-title">{{ .Title | title }}</h1>
+  </section>
+  <section class="article-content">
+    {{ .Content }}
+  </section>
+</article>
+{{ end }}

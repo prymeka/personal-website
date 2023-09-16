@@ -1,0 +1,134 @@
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+button,
+input {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+/* End of CSS Reset */
+
+:root {
+  --color-primary: rgba(42, 42, 45, 1);
+  --color-primary-transparent: rgba(42, 42, 45, 0);
+  --color-secondary: #faf9f9;
+  --color-secondary-transparent: rgba(250, 249, 249, 0.7);
+  --color-tertiary: #ce9363;
+  --color-tertiary-transparent: rgba(206, 147, 99, 0.5);
+}
+
+body, 
+main {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+main {
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Anchor Tags */
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  padding-inline-start: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.category-item,
+.back-home {
+  margin: 0.8em;
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
+  background-color: var(--color-tertiary);
+  text-align: center;
+}
+
+.category-item:hover,
+.back-home:hover {
+  background-color: var(--color-tertiary-transparent);
+}
+
+.category-item a,
+.back-home {
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.category-item a:hover,
+.back-home:hover {
+  text-decoration: none;
+}
+
+.back-home {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  font-weight: bold;
+  z-index: 3;
+}
+
+/* Footer */
+
+footer {
+  width: 100vw;
+  padding-block: 5em;
+  position: relative;
+}
+
+footer * {
+  margin-inline: 0.7em;
+}
+
+footer a {
+  text-transform: uppercase;
+}
+
+/* Mixin Classes */
+
+.is-flex-center-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.is-flex-center-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.is-flex-wrap {
+  flex-wrap: wrap;
+}

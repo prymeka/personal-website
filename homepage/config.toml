@@ -1,0 +1,12 @@
+baseURL = "https://prymek.com/"
+languageCode = "en-us"
+title = "Prymek - Homepage"
+summaryLength = 10
+
+[taxonomies]
+  category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

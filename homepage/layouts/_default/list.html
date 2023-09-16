@@ -1,0 +1,32 @@
+{{ define "content" }}
+<a href="/" class="back-home">&#8920;</a>
+<section id="projects" class="is-flex-center-column">
+  <h1>{{ .Title }}</h1>
+  {{ partial "all-cats" . }}
+  <ul id="projects-list">
+    {{ range where .RegularPages "Section" "projects" }}
+    <hr>
+    <li class="project is-flex-center-column">
+      <a class="project-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <p class="project-summary">
+        {{ .Summary }}
+        {{ if .Truncated }}
+        <a class="read-more" href="{{ .RelPermalink }}">Read more...</a>
+        {{ end }}
+      </p>
+      <ul id="cat-list" class="is-flex-center-row">
+      {{ range $i, $c := .Params.categories }}
+        {{ if $i }}
+        <span class="cat-delimit">|</span>
+        {{ end }}
+        <li class="cat-item"><a href='{{ "/categories/" | relLangURL }}{{ $c | urlize }}' class="cat-link">{{ $c | title }} </a></li>
+      {{ end }}
+      </ul>
+      {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+      <img src="{{ $featured_image }}" alt="Featured Image for {{ .Title }}" title="{{ .Title }}">
+    </li>
+    {{ end }}
+    <hr>
+  </ul>
+</section>
+{{ end }}
