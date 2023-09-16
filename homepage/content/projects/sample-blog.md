@@ -11,3 +11,5 @@ taxonomies:
 
 A sample blog made using [HUGO](https://gohugo.io/), which is an extremely fast framework for building static sites written in Golang - it is perfect for blogs and documentations. Additionally, for CSS I have used [Bulma](https://bulma.io/) framework. The blog is done entirly in HTML/CSS save for a few small touches where JavaScript was required.
 
+See the live version <a href="https://prymeka.github.io/sample-blog/" target="_blank">here</a>.
+
