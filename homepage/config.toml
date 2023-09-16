@@ -1,7 +1,7 @@
 baseURL = "https://prymek.com/"
 languageCode = "en-us"
 title = "Prymek - Homepage"
-summaryLength = 10
+summaryLength = 20
 
 [taxonomies]
   category = "categories"
