@@ -27,13 +27,6 @@ input {
 
 /* End of CSS Reset */
 
-@font-face {
-    font-family: 'alex_brushregular';
-    src: url('fonts/AlexBrush-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 :root {
   --color-primary: rgba(42, 42, 45, 1);
   --color-primary-transparent: rgba(42, 42, 45, 0);
@@ -106,6 +99,11 @@ a:hover {
 
 /* Hero */
 
+@font-face {
+    font-family: 'baskerville';
+    src: url('/fonts/LibreBaskerville-Italic.woff');
+}
+
 #hero,
 #hero-place-holder
 {
@@ -126,15 +124,14 @@ a:hover {
 #hero,
 #hero * {
   z-index: 0;
-  font-family: 'alex_brushregular', cursive;
-  font-size: 7rem;
+  font-family: baskerville, cursive;
+  font-size: 6rem;
   text-align: center;
 }
 
 #hero-subtitle {
   font-size: 2rem;
 }
-
 
 /* Footer */
 
