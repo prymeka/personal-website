@@ -139,6 +139,7 @@ footer {
   width: 100vw;
   padding-block: 5em;
   position: relative;
+  background-color: var(--color-primary);
 }
 
 @media only screen and (max-width: 580px) {
