@@ -141,6 +141,15 @@ footer {
   position: relative;
 }
 
+@media only screen and (max-width: 580px) {
+  footer {
+    flex-direction: column !important;
+  }
+  footer span {
+    visibility: hidden;
+  }
+}
+
 footer * {
   margin-inline: 0.7em;
 }
