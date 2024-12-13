@@ -2,7 +2,7 @@
 title: "Computer Simulation of Three Dimensional Wet Foams"
 date: 2022-07-31T20:12:42+01:00
 featured_image: "thesis.png"
-keywords: ["Wet Foams", "More-Witten", "3D Foams"]
+keywords: ["Wet Foams", "Morse-Witten", "3D Foams"]
 categories: ["Theoretical Physics"]
 
 taxonomies:
