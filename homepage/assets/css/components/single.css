@@ -14,7 +14,8 @@
 }
 
 .article-title {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
   font-family: sans-serif;
 }
@@ -34,7 +35,7 @@
 
 .article-content {
   line-height: 1.7;
-  font-size: 1.2rem;
+  font-size: 1rem;
   max-width: 60ch;
   margin: 1.7em;
 }
