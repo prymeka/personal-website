@@ -33,7 +33,7 @@ input {
   --color-secondary: #faf9f9;
   --color-secondary-transparent: rgba(250, 249, 249, 0.7);
   --color-tertiary: #ce9363;
-  --color-tertiary-transparent: rgba(206, 147, 99, 0.5);
+  --color-tertiary-transparent: rgba(206, 147, 99, 0.8);
 }
 
 body, 
@@ -65,6 +65,22 @@ a:hover {
   text-decoration: underline;
 }
 
+.read-more {
+  text-decoration: underline;
+}
+
+.read-more:hover {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.cat-item a:hover {
+  color: var(--color-primary);
+  background-color: var(--color-tertiary);
+  text-decoration: none;
+}
+
 .category-item,
 .back-home {
   margin: 0.8em;
@@ -77,6 +93,7 @@ a:hover {
 .category-item:hover,
 .back-home:hover {
   background-color: var(--color-tertiary-transparent);
+  scale: 1.02;
 }
 
 .category-item a,
@@ -100,8 +117,8 @@ a:hover {
 /* Hero */
 
 @font-face {
-    font-family: 'baskerville';
-    src: url('/fonts/LibreBaskerville-Italic.woff');
+  font-family: 'baskerville';
+  src: url('/fonts/LibreBaskerville-Italic.woff');
 }
 
 #hero,
